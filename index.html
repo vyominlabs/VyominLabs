@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 3 Seconds ke baad auto redirect karega aapki main website par -->
-    <meta http-equiv="refresh" content="3; url=https://vyominlabs.com">
+    <!-- 3 Seconds me auto-redirect karega aapki main website par -->
+    <meta http-equiv="refresh" content="3; url=https://sites.google.com/view/vyominlabs">
     <title>Vyomin Labs | Redirecting...</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
         }
 
         body {
-            background: #090d16;
+            background: #070b12;
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -28,37 +28,37 @@
             position: relative;
         }
 
-        /* Ambient Glow Background Effect */
+        /* Ambient Cyan Glow in Background */
         .glow-bg {
             position: absolute;
-            width: 450px;
-            height: 450px;
-            background: radial-gradient(circle, rgba(168, 85, 247, 0.22) 0%, rgba(59, 130, 246, 0.12) 50%, transparent 70%);
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(0, 210, 255, 0.25) 0%, rgba(0, 114, 255, 0.12) 50%, transparent 70%);
             border-radius: 50%;
-            filter: blur(50px);
-            animation: pulseGlow 5s infinite alternate ease-in-out;
+            filter: blur(60px);
+            animation: pulseGlow 4s infinite alternate ease-in-out;
             z-index: 1;
         }
 
         @keyframes pulseGlow {
-            0% { transform: scale(0.9) translate(-20px, -20px); opacity: 0.7; }
-            100% { transform: scale(1.15) translate(20px, 20px); opacity: 1; }
+            0% { transform: scale(0.9) translate(-15px, -15px); opacity: 0.7; }
+            100% { transform: scale(1.15) translate(15px, 15px); opacity: 1; }
         }
 
-        /* Glassmorphism Card */
+        /* High-Tech Glassmorphism Card */
         .redirect-card {
             position: relative;
             z-index: 2;
-            background: rgba(17, 24, 39, 0.75);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: rgba(11, 19, 34, 0.82);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            border: 1px solid rgba(0, 210, 255, 0.25);
             border-radius: 24px;
             padding: 44px 36px;
             text-align: center;
             max-width: 420px;
             width: 90%;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 30px rgba(168, 85, 247, 0.15);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), 0 0 35px rgba(0, 210, 255, 0.2);
             animation: fadeIn 0.8s ease-out;
         }
 
@@ -67,11 +67,11 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* Animated Spinner Rings */
+        /* Animated Spinner Rings around Logo */
         .spinner-wrapper {
             position: relative;
-            width: 80px;
-            height: 80px;
+            width: 92px;
+            height: 92px;
             margin: 0 auto 24px auto;
         }
 
@@ -84,36 +84,38 @@
         }
 
         .ring-1 {
-            border-top-color: #a855f7;
-            border-right-color: #a855f7;
+            border-top-color: #00d2ff;
+            border-right-color: #00d2ff;
             animation: spin 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+            filter: drop-shadow(0 0 8px #00d2ff);
         }
 
         .ring-2 {
-            border-bottom-color: #38bdf8;
-            border-left-color: #38bdf8;
-            animation: spinReverse 1.5s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+            border-bottom-color: rgba(0, 210, 255, 0.4);
+            border-left-color: rgba(0, 210, 255, 0.4);
+            animation: spinReverse 1.6s cubic-bezier(0.5, 0, 0.5, 1) infinite;
         }
 
+        /* Logo Icon Box in the Center */
         .spinner-icon {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 32px;
-            height: 32px;
-            background: linear-gradient(135deg, #a855f7, #6366f1);
-            border-radius: 8px;
+            width: 52px;
+            height: 52px;
+            background: rgba(13, 22, 41, 0.9);
+            border-radius: 14px;
+            border: 1px solid rgba(0, 210, 255, 0.4);
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 0 15px rgba(168, 85, 247, 0.5);
+            box-shadow: 0 0 20px rgba(0, 210, 255, 0.35);
         }
 
-        .spinner-icon span {
-            font-size: 16px;
-            font-weight: 800;
-            color: #fff;
+        .spinner-icon svg {
+            width: 36px;
+            height: 36px;
         }
 
         @keyframes spin {
@@ -126,7 +128,7 @@
             100% { transform: rotate(-360deg); }
         }
 
-        /* Branding Text */
+        /* Brand Title */
         .brand-title {
             font-size: 26px;
             font-weight: 800;
@@ -135,19 +137,18 @@
         }
 
         .brand-title .brand-accent {
-            background: linear-gradient(135deg, #c084fc, #a855f7, #38bdf8);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: #00d2ff;
+            text-shadow: 0 0 16px rgba(0, 210, 255, 0.6);
         }
 
         .tagline {
             font-size: 13px;
-            color: #94a3b8;
+            color: #8fa5c2;
             margin-bottom: 24px;
             letter-spacing: 0.3px;
         }
 
-        /* Progress Bar */
+        /* Cyan Progress Bar */
         .progress-container {
             width: 100%;
             height: 4px;
@@ -160,7 +161,8 @@
         .progress-bar {
             height: 100%;
             width: 0%;
-            background: linear-gradient(90deg, #a855f7, #38bdf8);
+            background: linear-gradient(90deg, #0072ff, #00d2ff);
+            box-shadow: 0 0 10px #00d2ff;
             border-radius: 8px;
             animation: fillProgress 3s linear forwards;
         }
@@ -176,9 +178,9 @@
             align-items: center;
             justify-content: center;
             gap: 8px;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.12);
-            color: #e2e8f0;
+            background: rgba(0, 210, 255, 0.08);
+            border: 1px solid rgba(0, 210, 255, 0.35);
+            color: #e0f7ff;
             padding: 12px 24px;
             border-radius: 12px;
             font-size: 14px;
@@ -189,10 +191,10 @@
         }
 
         .redirect-btn:hover {
-            background: rgba(168, 85, 247, 0.2);
-            border-color: #a855f7;
+            background: rgba(0, 210, 255, 0.22);
+            border-color: #00d2ff;
             color: #ffffff;
-            box-shadow: 0 0 15px rgba(168, 85, 247, 0.3);
+            box-shadow: 0 0 20px rgba(0, 210, 255, 0.5);
             transform: translateY(-1px);
         }
 
@@ -200,7 +202,7 @@
             width: 16px;
             height: 16px;
             fill: none;
-            stroke: currentColor;
+            stroke: #00d2ff;
             stroke-width: 2.5;
             transition: transform 0.2s;
         }
@@ -218,27 +220,33 @@
             <div class="ring ring-1"></div>
             <div class="ring ring-2"></div>
             <div class="spinner-icon">
-                <span>V</span>
+                <!-- Vyomin Labs Official Emblem Logo SVG -->
+                <svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="4" y="8" width="44" height="36" rx="8" fill="#00D2FF"/>
+                    <path d="M12 18 L20 28 L20 40 L12 40 Z" fill="#0B1322"/>
+                    <path d="M24 40 L36 26 L36 14 L24 28 Z" fill="#0B1322"/>
+                    <path d="M38 14 L44 21 L44 14 Z" fill="#0B1322"/>
+                    <path d="M23 36 L38 20 L33 20 L42 12 L44 23 L39 23 L25 39 Z" fill="#00D2FF"/>
+                </svg>
             </div>
         </div>
 
         <h1 class="brand-title">Vyomin <span class="brand-accent">Labs</span></h1>
-        <p class="tagline">Taking you to our official portal...</p>
+        <p class="tagline">Exploring Beyond Horizons...</p>
 
         <div class="progress-container">
             <div class="progress-bar"></div>
         </div>
 
-        <a href="https://vyominlabs.com" class="redirect-btn">
-            Click here to continue
+        <a href="https://sites.google.com/view/vyominlabs" class="redirect-btn">
+            Continue to Official Site
             <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
     </div>
 
     <script>
-        // Automatic JavaScript Fallback Redirect (in 3 seconds)
         setTimeout(function() {
-            window.location.href = "https://vyominlabs.com";
+            window.location.href = "https://sites.google.com/view/vyominlabs";
         }, 3000);
     </script>
 </body>
